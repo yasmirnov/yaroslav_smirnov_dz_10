@@ -4,9 +4,6 @@ CANDIDATES_FILE = "candidates.json"
 
 
 def load_candidates() -> list[dict]:
-    """
-    загружает данные из файла
-    """
     with open(CANDIDATES_FILE, "r") as file:
         return json.load(file)
 
